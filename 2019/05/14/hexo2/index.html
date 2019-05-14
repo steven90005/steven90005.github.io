@@ -7,19 +7,19 @@
 
 
 
-    <meta name="description" content="佈署網頁到 Github首先進入到建立Hexo的資料夾中，編輯blog資料夾底下的 _config.yml 檔案，找到 deploy 並修改如下 1234deploy:  type: git  repository: http://github.com/用戶名/用戶名.github.io.git  branch: master 回到命令提示字元，依序輸入3行指令(清除快取&amp;gt;產生靜態網站&amp;gt">
+    <meta name="description" content="佈署網頁到 Github首先進入到建立Hexo的資料夾中，編輯blog資料夾底下的 _config.yml 檔案，找到 deploy 並修改如下">
 <meta name="keywords" content="Hexo">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Hexo 架站筆記(二) 部屬至Github">
 <meta property="og:url" content="http://yoursite.com/2019/05/14/hexo2/index.html">
 <meta property="og:site_name" content="Steven Hsiao">
-<meta property="og:description" content="佈署網頁到 Github首先進入到建立Hexo的資料夾中，編輯blog資料夾底下的 _config.yml 檔案，找到 deploy 並修改如下 1234deploy:  type: git  repository: http://github.com/用戶名/用戶名.github.io.git  branch: master 回到命令提示字元，依序輸入3行指令(清除快取&amp;gt;產生靜態網站&amp;gt">
+<meta property="og:description" content="佈署網頁到 Github首先進入到建立Hexo的資料夾中，編輯blog資料夾底下的 _config.yml 檔案，找到 deploy 並修改如下">
 <meta property="og:locale" content="zh-TW">
 <meta property="og:image" content="https://titangene.github.io/images/cover/hexo.jpg">
-<meta property="og:updated_time" content="2019-05-14T09:28:48.823Z">
+<meta property="og:updated_time" content="2019-05-14T09:29:27.020Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo 架站筆記(二) 部屬至Github">
-<meta name="twitter:description" content="佈署網頁到 Github首先進入到建立Hexo的資料夾中，編輯blog資料夾底下的 _config.yml 檔案，找到 deploy 並修改如下 1234deploy:  type: git  repository: http://github.com/用戶名/用戶名.github.io.git  branch: master 回到命令提示字元，依序輸入3行指令(清除快取&amp;gt;產生靜態網站&amp;gt">
+<meta name="twitter:description" content="佈署網頁到 Github首先進入到建立Hexo的資料夾中，編輯blog資料夾底下的 _config.yml 檔案，找到 deploy 並修改如下">
 <meta name="twitter:image" content="https://titangene.github.io/images/cover/hexo.jpg">
 
 
@@ -157,7 +157,7 @@
                 <span class="level-item has-text-grey">
                     
                     
-                    1 分鐘 閱讀文 (大約 195 個字)
+                    1 分鐘 閱讀文 (大約 196 個字)
                 </span>
                 
                 
@@ -170,8 +170,7 @@
             
         </h1>
         <div class="content">
-            <h2 id="佈署網頁到-Github"><a href="#佈署網頁到-Github" class="headerlink" title="佈署網頁到 Github"></a>佈署網頁到 Github</h2><p>首先進入到建立Hexo的資料夾中，編輯blog資料夾底下的 _config.yml 檔案，找到 deploy 並修改如下</p>
-<figure class="highlight sh hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  <span class="hljs-built_in">type</span>: git</span><br><span class="line">  repository: http://github.com/用戶名/用戶名.github.io.git</span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure>
+            <h2 id="佈署網頁到-Github"><a href="#佈署網頁到-Github" class="headerlink" title="佈署網頁到 Github"></a>佈署網頁到 Github</h2><p>首先進入到建立Hexo的資料夾中，編輯blog資料夾底下的 _config.yml 檔案，找到 deploy 並修改如下<br><a id="more"></a><br><figure class="highlight sh hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  <span class="hljs-built_in">type</span>: git</span><br><span class="line">  repository: http://github.com/用戶名/用戶名.github.io.git</span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure></p>
 <p>回到命令提示字元，依序輸入3行指令(清除快取&gt;產生靜態網站&gt;部屬網站)，來將網站上傳到 github 中:</p>
 <p>清除快取檔案 (db.json) 和已產生的靜態檔案 (public)。<br><figure class="highlight sh hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo clean</span><br></pre></td></tr></table></figure></p>
 <p>產生靜態網站<br><figure class="highlight sh hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo g</span><br></pre></td></tr></table></figure></p>
