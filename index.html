@@ -138,6 +138,61 @@
     <div class="card">
     
     <div class="card-image">
+        <a href="/2019/05/14/hexo2/" class="image is-7by1">
+            <img class="thumbnail" src="https://titangene.github.io/images/cover/hexo.jpg" alt="Hexo 架站筆記(二) 部屬至Github">
+        </a>
+    </div>
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2019-05-14T09:14:44.000Z">2019-05-14</time>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    1 分鐘 閱讀文 (大約 195 個字)
+                </span>
+                
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                <a class="has-link-black-ter" href="/2019/05/14/hexo2/">Hexo 架站筆記(二) 部屬至Github</a>
+            
+        </h1>
+        <div class="content">
+            <h2 id="佈署網頁到-Github"><a href="#佈署網頁到-Github" class="headerlink" title="佈署網頁到 Github"></a>佈署網頁到 Github</h2><p>首先進入到建立Hexo的資料夾中，編輯blog資料夾底下的 _config.yml 檔案，找到 deploy 並修改如下</p>
+<figure class="highlight sh hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  <span class="hljs-built_in">type</span>: git</span><br><span class="line">  repository: http://github.com/用戶名/用戶名.github.io.git</span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure>
+<p>回到命令提示字元，依序輸入3行指令(清除快取&gt;產生靜態網站&gt;部屬網站)，來將網站上傳到 github 中:</p>
+<p>清除快取檔案 (db.json) 和已產生的靜態檔案 (public)。<br><figure class="highlight sh hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo clean</span><br></pre></td></tr></table></figure></p>
+<p>產生靜態網站<br><figure class="highlight sh hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo g</span><br></pre></td></tr></table></figure></p>
+<p>部署網站</p>
+<figure class="highlight sh hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo d</span><br></pre></td></tr></table></figure>
+<p>(更多詳細的Hexo指令可以參考<a href="https://hexo.io/zh-tw/docs/commands.html" target="_blank" rel="noopener">這篇</a>)</p>
+<p>最後到瀏覽器中輸入 “用戶名”+github.io 的網址，就可以看到成功發布的網站了。</p>
+
+        </div>
+        
+        
+        
+    </div>
+</div>
+
+
+
+
+
+
+
+
+    <div class="card">
+    
+    <div class="card-image">
         <a href="/2019/05/14/my-first-post/" class="image is-7by1">
             <img class="thumbnail" src="https://titangene.github.io/images/cover/hexo.jpg" alt="Hexo 架站筆記(一) 前置作業">
         </a>
@@ -153,7 +208,7 @@
                 <span class="level-item has-text-grey">
                     
                     
-                    3 分鐘 閱讀文 (大約 402 個字)
+                    3 分鐘 閱讀文 (大約 481 個字)
                 </span>
                 
                 
@@ -228,7 +283,7 @@
                         文章
                     </p>
                     <p class="title has-text-weight-normal">
-                        1
+                        2
                     </p>
                 </div>
             </div>
@@ -374,6 +429,25 @@
         
         <article class="media">
             
+            <a href="/2019/05/14/hexo2/" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="https://titangene.github.io/images/cover/hexo.jpg" alt="Hexo 架站筆記(二) 部屬至Github">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-05-14T09:14:44.000Z">2019-05-14</time></div>
+                    <a href="/2019/05/14/hexo2/" class="has-link-black-ter is-size-6">Hexo 架站筆記(二) 部屬至Github</a>
+                    <p class="is-size-7 is-uppercase">
+                        
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+        <article class="media">
+            
             <a href="/2019/05/14/my-first-post/" class="media-left">
                 <p class="image is-64x64">
                     <img class="thumbnail" src="https://titangene.github.io/images/cover/hexo.jpg" alt="Hexo 架站筆記(一) 前置作業">
@@ -409,7 +483,7 @@
                     <span class="level-item">五月 2019</span>
                 </span>
                 <span class="level-end">
-                    <span class="level-item tag">1</span>
+                    <span class="level-item tag">2</span>
                 </span>
             </a>
         </li>
@@ -430,7 +504,7 @@
                 <div class="control">
                     <a class="tags has-addons" href="/tags/Hexo/">
                         <span class="tag">Hexo</span>
-                        <span class="tag is-grey">1</span>
+                        <span class="tag is-grey">2</span>
                     </a>
                 </div>
                 
@@ -456,6 +530,25 @@
         <h3 class="menu-label">
             最新文章
         </h3>
+        
+        <article class="media">
+            
+            <a href="/2019/05/14/hexo2/" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="https://titangene.github.io/images/cover/hexo.jpg" alt="Hexo 架站筆記(二) 部屬至Github">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-05-14T09:14:44.000Z">2019-05-14</time></div>
+                    <a href="/2019/05/14/hexo2/" class="has-link-black-ter is-size-6">Hexo 架站筆記(二) 部屬至Github</a>
+                    <p class="is-size-7 is-uppercase">
+                        
+                    </p>
+                </div>
+            </div>
+        </article>
         
         <article class="media">
             
@@ -494,7 +587,7 @@
                     <span class="level-item">五月 2019</span>
                 </span>
                 <span class="level-end">
-                    <span class="level-item tag">1</span>
+                    <span class="level-item tag">2</span>
                 </span>
             </a>
         </li>
@@ -515,7 +608,7 @@
                 <div class="control">
                     <a class="tags has-addons" href="/tags/Hexo/">
                         <span class="tag">Hexo</span>
-                        <span class="tag is-grey">1</span>
+                        <span class="tag is-grey">2</span>
                     </a>
                 </div>
                 
