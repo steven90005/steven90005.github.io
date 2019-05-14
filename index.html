@@ -147,7 +147,7 @@
                 <span class="level-item has-text-grey">
                     
                     
-                    幾秒 閱讀文 (大約 0 個字)
+                    2 分鐘 閱讀文 (大約 303 個字)
                 </span>
                 
                 
@@ -156,11 +156,31 @@
         
         <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
             
-                <a class="has-link-black-ter" href="/2019/05/14/my-first-post/">my_first_post</a>
+                <a class="has-link-black-ter" href="/2019/05/14/my-first-post/">Hexo 架站筆記</a>
             
         </h1>
         <div class="content">
-            
+            <p>##什麼是Hexo</p>
+<p><a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>是一個快速、簡單且強大的部落格框架。能夠使用 <a href="https://markdown.tw/" target="_blank" rel="noopener">Markdown</a> 語法來新增文章，快速渲染你的文章，有強大的外掛系統及豐富的擴充性，簡單易用，能在很短的時間內，透過漂亮的主題產生靜態檔案。</p>
+<p>##前置作業</p>
+<p>在開始之前須在電腦中安裝<a href="https://nodejs.org/en/" target="_blank" rel="noopener">Node.js</a>以及<a href="https://git-scm.com/" target="_blank" rel="noopener">Git</a></p>
+<p>##安裝Hexo</p>
+<p>啟動command box使用ndoe.js的rpm工具安裝hexo</p>
+<figure class="highlight bash hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install -g hexo-cli</span><br></pre></td></tr></table></figure>
+<p>輸入以下指令初始化部落格以及配置</p>
+<figure class="highlight bash hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo init blog</span><br></pre></td></tr></table></figure>
+<p>使用cd指令進入資料夾內</p>
+<figure class="highlight bash hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-built_in">cd</span> blog</span><br></pre></td></tr></table></figure>
+<p>並新增一篇文章，這裡取名為 “first_post”</p>
+<figure class="highlight bash hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new first_post</span><br></pre></td></tr></table></figure>
+<p>接下來我們使用 hexo g 來生成靜態檔案</p>
+<figure class="highlight bash hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo g</span><br></pre></td></tr></table></figure>
+<p>使用 hexo s 啟動本地伺服器，來預覽本地端的 Hexo 部落格，預設開的 port 為 4000</p>
+<figure class="highlight bash hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo s</span><br></pre></td></tr></table></figure>
+<p>如果 port 被占用，則可以使用下面語法修改 port</p>
+<figure class="highlight bash hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo server -p 5000</span><br></pre></td></tr></table></figure>
+<p>最後在瀏覽器上面輸入: localhost:4000<br>就可以看到新建的Hexo部落格了!</p>
+
         </div>
         
         
@@ -196,7 +216,7 @@
         
         <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
             
-                <a class="has-link-black-ter" href="/2019/05/14/hello-world/">Hexo 教學筆記</a>
+                <a class="has-link-black-ter" href="/2019/05/14/hello-world/">Hello World</a>
             
         </h1>
         <div class="content">
@@ -283,7 +303,7 @@
                         標籤
                     </p>
                     <p class="title has-text-weight-normal">
-                        0
+                        1
                     </p>
                 </div>
             </div>
@@ -387,6 +407,15 @@
 </div>
     
         
+<div class="card widget">
+    <div class="card-content">
+        <h3 class="menu-label">
+            標籤雲
+        </h3>
+        <a href="/tags/Hexo/" style="font-size: 10px;">Hexo</a>
+    </div>
+</div>
+
     
     
         <div class="column-right-shadow is-hidden-widescreen ">
@@ -402,14 +431,14 @@
             
             <a href="/2019/05/14/my-first-post/" class="media-left">
                 <p class="image is-64x64">
-                    <img class="thumbnail" src="/images/thumbnail.svg" alt="my_first_post">
+                    <img class="thumbnail" src="/images/thumbnail.svg" alt="Hexo 架站筆記">
                 </p>
             </a>
             
             <div class="media-content">
                 <div class="content">
                     <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-05-14T03:46:01.000Z">2019-05-14</time></div>
-                    <a href="/2019/05/14/my-first-post/" class="has-link-black-ter is-size-6">my_first_post</a>
+                    <a href="/2019/05/14/my-first-post/" class="has-link-black-ter is-size-6">Hexo 架站筆記</a>
                     <p class="is-size-7 is-uppercase">
                         
                     </p>
@@ -421,14 +450,14 @@
             
             <a href="/2019/05/14/hello-world/" class="media-left">
                 <p class="image is-64x64">
-                    <img class="thumbnail" src="/images/thumbnail.svg" alt="Hexo 教學筆記">
+                    <img class="thumbnail" src="/images/thumbnail.svg" alt="Hello World">
                 </p>
             </a>
             
             <div class="media-content">
                 <div class="content">
                     <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-05-14T03:45:10.824Z">2019-05-14</time></div>
-                    <a href="/2019/05/14/hello-world/" class="has-link-black-ter is-size-6">Hexo 教學筆記</a>
+                    <a href="/2019/05/14/hello-world/" class="has-link-black-ter is-size-6">Hello World</a>
                     <p class="is-size-7 is-uppercase">
                         
                     </p>
@@ -471,6 +500,13 @@
                 標籤
             </h3>
             <div class="field is-grouped is-grouped-multiline">
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/Hexo/">
+                        <span class="tag">Hexo</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
                 
             </div>
         </div>
@@ -499,14 +535,14 @@
             
             <a href="/2019/05/14/my-first-post/" class="media-left">
                 <p class="image is-64x64">
-                    <img class="thumbnail" src="/images/thumbnail.svg" alt="my_first_post">
+                    <img class="thumbnail" src="/images/thumbnail.svg" alt="Hexo 架站筆記">
                 </p>
             </a>
             
             <div class="media-content">
                 <div class="content">
                     <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-05-14T03:46:01.000Z">2019-05-14</time></div>
-                    <a href="/2019/05/14/my-first-post/" class="has-link-black-ter is-size-6">my_first_post</a>
+                    <a href="/2019/05/14/my-first-post/" class="has-link-black-ter is-size-6">Hexo 架站筆記</a>
                     <p class="is-size-7 is-uppercase">
                         
                     </p>
@@ -518,14 +554,14 @@
             
             <a href="/2019/05/14/hello-world/" class="media-left">
                 <p class="image is-64x64">
-                    <img class="thumbnail" src="/images/thumbnail.svg" alt="Hexo 教學筆記">
+                    <img class="thumbnail" src="/images/thumbnail.svg" alt="Hello World">
                 </p>
             </a>
             
             <div class="media-content">
                 <div class="content">
                     <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-05-14T03:45:10.824Z">2019-05-14</time></div>
-                    <a href="/2019/05/14/hello-world/" class="has-link-black-ter is-size-6">Hexo 教學筆記</a>
+                    <a href="/2019/05/14/hello-world/" class="has-link-black-ter is-size-6">Hello World</a>
                     <p class="is-size-7 is-uppercase">
                         
                     </p>
@@ -568,6 +604,13 @@
                 標籤
             </h3>
             <div class="field is-grouped is-grouped-multiline">
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/Hexo/">
+                        <span class="tag">Hexo</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
                 
             </div>
         </div>

@@ -2,15 +2,14 @@
 <html lang="zh">
 <head><meta name="generator" content="Hexo 3.8.0">
     <meta charset="utf-8">
-<title>分類 - Steven Hsiao</title>
+<title>標籤: Hexo - Steven Hsiao</title>
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
 
 
-    <meta name="keywords" content="Hexo">
-<meta property="og:type" content="website">
+    <meta property="og:type" content="website">
 <meta property="og:title" content="Steven Hsiao">
-<meta property="og:url" content="http://yoursite.com/categories/index.html">
+<meta property="og:url" content="http://yoursite.com/tags/Hexo/index.html">
 <meta property="og:site_name" content="Steven Hsiao">
 <meta property="og:locale" content="zh-TW">
 <meta property="og:image" content="http://yoursite.com/images/og_image.png">
@@ -102,7 +101,7 @@
                 
                 <a class="navbar-item" href="/archives">Archives</a>
                 
-                <a class="navbar-item is-active" href="/categories">Categories</a>
+                <a class="navbar-item" href="/categories">Categories</a>
                 
                 <a class="navbar-item" href="/tags">Tags</a>
                 
@@ -135,19 +134,78 @@
     <section class="section">
         <div class="container">
             <div class="columns">
-                <div class="column is-8-tablet is-8-desktop is-6-widescreen has-order-2 column-main">
-<div class="card widget">
+                <div class="column is-8-tablet is-8-desktop is-6-widescreen has-order-2 column-main"><div class="card">
     <div class="card-content">
-        <div class="menu">
-            <h3 class="menu-label">
-                分類
-            </h3>
-            <ul class="menu-list">
-            
-            </ul>
-        </div>
+        <nav class="breadcrumb" aria-label="breadcrumbs">
+        <ul>
+            <li><a href="/tags">標籤</a></li>
+            <li class="is-active"><a href="#" aria-current="page">Hexo</a></li>
+        </ul>
+        </nav>
     </div>
-</div></div>
+</div>
+
+    <div class="card">
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2019-05-14T03:46:01.000Z">2019-05-14</time>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    2 分鐘 閱讀文 (大約 303 個字)
+                </span>
+                
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                <a class="has-link-black-ter" href="/2019/05/14/my-first-post/">Hexo 架站筆記</a>
+            
+        </h1>
+        <div class="content">
+            <p>##什麼是Hexo</p>
+<p><a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>是一個快速、簡單且強大的部落格框架。能夠使用 <a href="https://markdown.tw/" target="_blank" rel="noopener">Markdown</a> 語法來新增文章，快速渲染你的文章，有強大的外掛系統及豐富的擴充性，簡單易用，能在很短的時間內，透過漂亮的主題產生靜態檔案。</p>
+<p>##前置作業</p>
+<p>在開始之前須在電腦中安裝<a href="https://nodejs.org/en/" target="_blank" rel="noopener">Node.js</a>以及<a href="https://git-scm.com/" target="_blank" rel="noopener">Git</a></p>
+<p>##安裝Hexo</p>
+<p>啟動command box使用ndoe.js的rpm工具安裝hexo</p>
+<figure class="highlight bash hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install -g hexo-cli</span><br></pre></td></tr></table></figure>
+<p>輸入以下指令初始化部落格以及配置</p>
+<figure class="highlight bash hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo init blog</span><br></pre></td></tr></table></figure>
+<p>使用cd指令進入資料夾內</p>
+<figure class="highlight bash hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-built_in">cd</span> blog</span><br></pre></td></tr></table></figure>
+<p>並新增一篇文章，這裡取名為 “first_post”</p>
+<figure class="highlight bash hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new first_post</span><br></pre></td></tr></table></figure>
+<p>接下來我們使用 hexo g 來生成靜態檔案</p>
+<figure class="highlight bash hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo g</span><br></pre></td></tr></table></figure>
+<p>使用 hexo s 啟動本地伺服器，來預覽本地端的 Hexo 部落格，預設開的 port 為 4000</p>
+<figure class="highlight bash hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo s</span><br></pre></td></tr></table></figure>
+<p>如果 port 被占用，則可以使用下面語法修改 port</p>
+<figure class="highlight bash hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo server -p 5000</span><br></pre></td></tr></table></figure>
+<p>最後在瀏覽器上面輸入: localhost:4000<br>就可以看到新建的Hexo部落格了!</p>
+
+        </div>
+        
+        
+        
+    </div>
+</div>
+
+
+
+
+
+
+
+
+</div>
                 
 
 
