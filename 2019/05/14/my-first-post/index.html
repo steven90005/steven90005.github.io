@@ -16,7 +16,7 @@
 <meta property="og:description" content="什麼是HexoHexo是一個快速、簡單且強大的部落格框架。能夠使用 Markdown 語法來新增文章，快速渲染你的文章，有強大的外掛系統及豐富的擴充性，簡單易用，能在很短的時間內，透過漂亮的主題產生靜態檔案。">
 <meta property="og:locale" content="zh-TW">
 <meta property="og:image" content="https://titangene.github.io/images/cover/hexo.jpg">
-<meta property="og:updated_time" content="2019-05-14T07:31:30.615Z">
+<meta property="og:updated_time" content="2019-05-14T07:46:35.084Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo 架站筆記(一) 前置作業">
 <meta name="twitter:description" content="什麼是HexoHexo是一個快速、簡單且強大的部落格框架。能夠使用 Markdown 語法來新增文章，快速渲染你的文章，有強大的外掛系統及豐富的擴充性，簡單易用，能在很短的時間內，透過漂亮的主題產生靜態檔案。">
@@ -157,7 +157,7 @@
                 <span class="level-item has-text-grey">
                     
                     
-                    2 分鐘 閱讀文 (大約 346 個字)
+                    3 分鐘 閱讀文 (大約 402 個字)
                 </span>
                 
                 
@@ -173,19 +173,20 @@
             <h2 id="什麼是Hexo"><a href="#什麼是Hexo" class="headerlink" title="什麼是Hexo"></a>什麼是Hexo</h2><p><a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>是一個快速、簡單且強大的部落格框架。能夠使用 <a href="https://markdown.tw/" target="_blank" rel="noopener">Markdown</a> 語法來新增文章，快速渲染你的文章，有強大的外掛系統及豐富的擴充性，簡單易用，能在很短的時間內，透過漂亮的主題產生靜態檔案。<br><a id="more"></a></p>
 <h2 id="前置作業"><a href="#前置作業" class="headerlink" title="前置作業"></a>前置作業</h2><p>在開始之前須在電腦中安裝<a href="https://nodejs.org/en/" target="_blank" rel="noopener">Node.js</a>以及<a href="https://git-scm.com/" target="_blank" rel="noopener">Git</a></p>
 <h2 id="安裝Hexo"><a href="#安裝Hexo" class="headerlink" title="安裝Hexo"></a>安裝Hexo</h2><p>啟動command box使用ndoe.js的rpm工具安裝hexo</p>
-<figure class="highlight bash hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install -g hexo-cli</span><br></pre></td></tr></table></figure>
-<p>輸入以下指令初始化部落格以及配置</p>
-<figure class="highlight bash hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo init blog</span><br></pre></td></tr></table></figure>
-<p>使用cd指令進入資料夾內</p>
-<figure class="highlight bash hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-built_in">cd</span> blog</span><br></pre></td></tr></table></figure>
+<figure class="highlight sh hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install -g hexo-cli</span><br></pre></td></tr></table></figure>
+<p>備註:由於Git的網站部屬教學在網路上有很多<a href="https://gitbook.tw/chapters/github/using-github-pages.html" target="_blank" rel="noopener">教學資源</a>可以運用，所以在這邊就不贅述了。</p>
+<h2 id="環境建置"><a href="#環境建置" class="headerlink" title="環境建置"></a>環境建置</h2><p>輸入以下指令初始化部落格以及配置</p>
+<figure class="highlight sh hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo init blog</span><br></pre></td></tr></table></figure>
+<p>此時會在<br>使用cd指令進入資料夾內</p>
+<figure class="highlight sh hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-built_in">cd</span> blog</span><br></pre></td></tr></table></figure>
 <p>並新增一篇文章，這裡取名為 “first_post”</p>
-<figure class="highlight bash hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new first_post</span><br></pre></td></tr></table></figure>
+<figure class="highlight sh hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new first_post</span><br></pre></td></tr></table></figure>
 <p>接下來我們使用 hexo g 來生成靜態檔案</p>
-<figure class="highlight bash hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo g</span><br></pre></td></tr></table></figure>
+<figure class="highlight sh hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo g</span><br></pre></td></tr></table></figure>
 <p>使用 hexo s 啟動本地伺服器，來預覽本地端的 Hexo 部落格，預設開的 port 為 4000</p>
-<figure class="highlight bash hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo s</span><br></pre></td></tr></table></figure>
+<figure class="highlight sh hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo s</span><br></pre></td></tr></table></figure>
 <p>如果 port 被占用，則可以使用下面語法修改 port</p>
-<figure class="highlight bash hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo server -p 5000</span><br></pre></td></tr></table></figure>
+<figure class="highlight sh hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo server -p 5000</span><br></pre></td></tr></table></figure>
 <p>最後在瀏覽器上面輸入: localhost:4000<br>就可以看到新建的Hexo部落格了!</p>
 <p><img src="https://lijiankun24.com/Mac%E4%B8%8BHexo%E5%92%8CGitHub-Pages%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A22/hexo_scan.png" alt></p>
 <h2 id="參考文獻"><a href="#參考文獻" class="headerlink" title="參考文獻"></a>參考文獻</h2><p><a href="https://junyou.tw/hexo/" target="_blank" rel="noopener">https://junyou.tw/hexo/</a></p>
@@ -209,20 +210,6 @@
 
 
 
-
-<div class="card card-transparent">
-    <div class="level post-navigation is-flex-wrap is-mobile">
-        
-        
-        <div class="level-end">
-            <a class="level level-item has-link-grey  article-nav-next" href="/2019/05/14/hello-world/">
-                <span class="level-item">Hello World</span>
-                <i class="level-item fas fa-chevron-right"></i>
-            </a>
-        </div>
-        
-    </div>
-</div>
 
 
 </div>
@@ -264,7 +251,7 @@
                         文章
                     </p>
                     <p class="title has-text-weight-normal">
-                        2
+                        1
                     </p>
                 </div>
             </div>
@@ -427,25 +414,6 @@
             </div>
         </article>
         
-        <article class="media">
-            
-            <a href="/2019/05/14/hello-world/" class="media-left">
-                <p class="image is-64x64">
-                    <img class="thumbnail" src="/images/thumbnail.svg" alt="Hello World">
-                </p>
-            </a>
-            
-            <div class="media-content">
-                <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-05-14T03:45:10.824Z">2019-05-14</time></div>
-                    <a href="/2019/05/14/hello-world/" class="has-link-black-ter is-size-6">Hello World</a>
-                    <p class="is-size-7 is-uppercase">
-                        
-                    </p>
-                </div>
-            </div>
-        </article>
-        
     </div>
 </div>
 
@@ -464,7 +432,7 @@
                     <span class="level-item">五月 2019</span>
                 </span>
                 <span class="level-end">
-                    <span class="level-item tag">2</span>
+                    <span class="level-item tag">1</span>
                 </span>
             </a>
         </li>
@@ -531,25 +499,6 @@
             </div>
         </article>
         
-        <article class="media">
-            
-            <a href="/2019/05/14/hello-world/" class="media-left">
-                <p class="image is-64x64">
-                    <img class="thumbnail" src="/images/thumbnail.svg" alt="Hello World">
-                </p>
-            </a>
-            
-            <div class="media-content">
-                <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-05-14T03:45:10.824Z">2019-05-14</time></div>
-                    <a href="/2019/05/14/hello-world/" class="has-link-black-ter is-size-6">Hello World</a>
-                    <p class="is-size-7 is-uppercase">
-                        
-                    </p>
-                </div>
-            </div>
-        </article>
-        
     </div>
 </div>
 
@@ -568,7 +517,7 @@
                     <span class="level-item">五月 2019</span>
                 </span>
                 <span class="level-end">
-                    <span class="level-item tag">2</span>
+                    <span class="level-item tag">1</span>
                 </span>
             </a>
         </li>
